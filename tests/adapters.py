@@ -592,5 +592,5 @@ def run_train_bpe(
                 representing that <token1> was merged with <token2>.
                 Merges are ordered by order of creation.
     """
-    vocab_count = bpe.pretokenize(input_path, special_tokens)
+    vocab_count = bpe.train_bpe(input_path, vocab_size, special_tokens)
     return ()
